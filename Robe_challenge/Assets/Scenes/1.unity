@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465188380}
   - component: {fileID: 465188381}
+  - component: {fileID: 465188382}
   m_Layer: 0
   m_Name: header_red
   m_TagString: Untagged
@@ -273,7 +274,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.74, y: 0.23}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -286,6 +287,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28900194, y: 1.1333121}
   m_EdgeRadius: 0
+--- !u!50 &465188382
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465188379}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &814349599
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +365,7 @@ MonoBehaviour:
   pointB: {fileID: 1035126097}
   lineRenderer: {fileID: 814349603}
   boxCollider: {fileID: 814349602}
+  spriteRenderer: {fileID: 0}
 --- !u!61 &814349602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -425,8 +454,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: -5.8877106, y: 0.9022034, z: 0}
+  - {x: -3.8877106, y: 0.9022034, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -753,8 +782,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: -3.8877106, y: -0.5977966, z: 0}
+  - {x: -5.8877106, y: -0.5977966, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -882,6 +911,7 @@ MonoBehaviour:
   pointB: {fileID: 112930055}
   lineRenderer: {fileID: 849380509}
   boxCollider: {fileID: 849380508}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1035126096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818047245}
   - component: {fileID: 1818047246}
+  - component: {fileID: 1818047247}
   m_Layer: 0
   m_Name: footer_red
   m_TagString: Untagged
@@ -1078,6 +1109,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41439676, y: 1.0244001}
   m_EdgeRadius: 0
+--- !u!50 &1818047247
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818047244}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
