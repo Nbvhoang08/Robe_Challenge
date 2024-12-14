@@ -35,9 +35,9 @@ public class RobeMove : MonoBehaviour
         if (!isMoving)
         {
             // Kiểm tra xem có đối tượng "Screw" trong phạm vi phát hiện không
-            Collider2D[] screws = Physics2D.OverlapCircleAll(transform.position, detectionRadius,woodLayer);
+            Collider2D[] wood = Physics2D.OverlapCircleAll(transform.position, detectionRadius,woodLayer);
 
-            if (screws.Length == 0)
+            if (wood.Length == 0)
             {
                 // Nếu không phát hiện thấy đối tượng "Screw", bắt đầu di chuyển
                 isMoving = true;
@@ -69,11 +69,11 @@ public class RobeMove : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position, targetLocalPosition, moveSpeed * Time.deltaTime);
 
                 // Kiểm tra nếu đã đến vị trí mục tiêu
-                if (Vector2.Distance(transform.position, targetLocalPosition) < 0.01f)
+                if (Vector2.Distance(transform.position, targetLocalPosition) < 0.3f)
                 {
                     // Dừng lại khi đến nơi
                     isMoving = false;
-                    /*SoundManager.Instance.PlayVFXSound(0);*/
+                    SoundManager.Instance.PlayVFXSound(0);
                     StartCoroutine(DeactivateParentAfterDelay(0.2f));
                 }
             }
@@ -103,9 +103,9 @@ public class RobeMove : MonoBehaviour
             varLine = true;
             if (!hasCollided && isMoving)
             {
-               /* _gameManager.hp -= 1;*/
+                _gameManager.hp -= 1;
                 hasCollided = true;
-                /*SoundManager.Instance.PlayVFXSound(1);*/
+                SoundManager.Instance.PlayVFXSound(1);
             }
 
         }

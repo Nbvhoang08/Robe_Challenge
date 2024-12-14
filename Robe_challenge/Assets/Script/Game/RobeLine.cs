@@ -35,7 +35,7 @@ public class RobeLine : MonoBehaviour
 
             // Tính toán vị trí và kích thước cho BoxCollider2D
             float length = Vector3.Distance(positionA, positionB);
-            boxCollider.size = new Vector2(length * 2, lineWidth * 2);
+            boxCollider.size = new Vector2(length, lineWidth);
 
             // Tính toán góc xoay cho BoxCollider2D
             float angle = Mathf.Atan2(positionB.y - positionA.y, positionB.x - positionA.x) * Mathf.Rad2Deg;
@@ -60,8 +60,8 @@ public class RobeLine : MonoBehaviour
             Vector3 spritePosition = spriteRenderer.transform.position;
             Handles.Label(spritePosition, $"Order: {spriteRenderer.sortingOrder}", new GUIStyle
             {
-                fontSize = 12,
-               normal = new GUIStyleState { textColor = Color.black }
+                fontSize = 24,
+               normal = new GUIStyleState { textColor = Color.white }
             });
         }
     }
