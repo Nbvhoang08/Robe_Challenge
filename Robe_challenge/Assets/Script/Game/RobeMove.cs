@@ -118,9 +118,9 @@ public class RobeMove : MonoBehaviour
         Instantiate(effect, new Vector3(transform.position.x, transform.position.y, -3), Quaternion.identity);
     }
     // Vẽ bán kính phát hiện trong chế độ Scene để dễ dàng kiểm tra
-    void OnDrawGizmosSelected()
+   /* void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
-    }
+    }*/
 }

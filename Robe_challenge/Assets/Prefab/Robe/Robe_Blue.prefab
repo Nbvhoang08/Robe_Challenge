@@ -936,7 +936,7 @@ MonoBehaviour:
   isMoving: 0
   varLine: 0
   startPos: {x: 0, y: 0}
-  hasCollided: 0
+  hasCollided: 1
 --- !u!114 &5972402317863489939
 MonoBehaviour:
   m_ObjectHideFlags: 0

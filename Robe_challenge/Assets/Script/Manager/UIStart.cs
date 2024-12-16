@@ -13,7 +13,7 @@ public class UIStart : MonoBehaviour
         canvas = GetComponent<Canvas>();
     }
 
-    void Update()
+    /*void Update()
     {
 
         // Đảm bảo chế độ render của Canvas luôn là ScreenSpace
@@ -23,5 +23,5 @@ public class UIStart : MonoBehaviour
             // Tìm Main Camera trong scene nếu renderCamera bị null
             canvas.worldCamera = Camera.main;
         }
-    }
+    }*/
 }
